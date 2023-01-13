@@ -7,7 +7,7 @@ export const theme = createTheme({
             light:"darkgray"
         },
         secondary:{
-            main:"skyblue",
+            main:"darkblue",
         },
     otherColor:{
         main:"orange",

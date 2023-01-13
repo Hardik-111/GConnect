@@ -21,7 +21,7 @@ const StyledToolbar = styled(Toolbar)({
 const Search = styled("div")(({ theme }) => ({
   backgroundColor: "white",
   padding: "0 10px",
-  borderRadius: theme.shape.borderRadius,
+  borderRadius: "15px",
   width: "40%",
 }));
 
@@ -46,14 +46,15 @@ const { useState, useEffect } = React;
 const Navbar = () => {
    const [open, setOpen] = useState(false)
   return (
-    <AppBar position="sticky">
-      <StyledToolbar>
-        <Typography variant="h5" sx={{ display: { xs: "none", sm: "block" } }}>
+    <AppBar position="sticky" >
+      <StyledToolbar >
+        <Typography  variant="h5" sx={{ display: { xs: "none", sm: "block" } }}>
           GConnect
         </Typography>
-        <GMobiledataRounded sx={{ display: { xs: "block", sm: "none" } , height:"72px" , width:"60px" }} />
+        <GMobiledataRounded
+        sx={{ display: { xs: "block", sm: "none" } , height:"72px" , width:"60px" }} />
         <Search>
-          <InputBase placeholder="Search..." />{" "}
+          <InputBase placeholder="Search..." />
         </Search>
         <Icons>
           <Badge badgeContent={4} color="error">
