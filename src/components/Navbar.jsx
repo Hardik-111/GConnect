@@ -47,7 +47,7 @@ const Navbar = () => {
    const [open, setOpen] = useState(false)
   return (
     <AppBar position="sticky" >
-      <StyledToolbar >
+      <StyledToolbar sx={{ color:"#0C0C0C " , fontWeight:"900"  ,bgcolor:"#D80069 "}}>
         <Typography  variant="h5" sx={{ display: { xs: "none", sm: "block" } }}>
           GConnect
         </Typography>
@@ -71,7 +71,7 @@ const Navbar = () => {
         </Icons>
         <UserBox onClick={e=>setOpen(true)} >
           <Avatar
-            sx={{ width: 28, height: 28 }}
+            sx={{ width: 29, height: 29 }}
             src="img/profile-pic.png"
           />
           <Typography variant="span">Hardik</Typography>
